@@ -1,0 +1,7 @@
+{
+  "name": "huahua",
+  "age": 18,
+  "sex": "boy",
+  "adult": true,
+  "friends": ["jack", "tom", "jesse"]
+}

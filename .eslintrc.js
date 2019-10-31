@@ -51,4 +51,4 @@ module.exports = {
     // 必须使用双引号包裹字符串
     quotes: ["error", "double"]
   }
-};
+}
