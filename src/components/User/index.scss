@@ -1,0 +1,18 @@
+#user {
+  display: flex;
+  align-items: center;
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: powderblue;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .username {
+    padding: 9px;
+    border-radius: 100px;
+    padding-left: 30px;
+    margin-left: -30px;
+    background-color: #fff;
+  }
+}
