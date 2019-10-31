@@ -49,12 +49,7 @@ module.exports = {
               presets: ["@babel/preset-env"]
             }
           },
-          {
-            loader: "eslint-loader",
-            options: {
-              // eslintPath: path.join(__dirname, ".eslintrc.json")
-            }
-          }
+          "eslint-loader"
         ]
       }
     ]
