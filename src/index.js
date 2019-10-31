@@ -1,4 +1,4 @@
-import './css/global.css';
+import './global/global.css';
 import home from './views/Home';
 import TplEngin from "./utils/tpl-engine";
 
