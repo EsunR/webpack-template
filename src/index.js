@@ -11,6 +11,7 @@ imgDom.style.display = "block"
 app.appendChild(imgDom)
 
 // axios.defaults.baseURL = config.host
-axios.get("/user").then(res => {
+axios.get("/api/user").then(res => {
   console.log(res.data)
 })
+console.log(process.env.NODE_ENV)
