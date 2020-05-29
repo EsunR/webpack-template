@@ -46,7 +46,18 @@ module.exports = {
           {
             loader: "babel-loader",
             options: {
-              presets: ["@babel/preset-env"]
+              presets: [
+                [
+                  "@babel/preset-env",
+                  {
+                    targets: {
+                      browsers: ["ie >= 8"]
+                    },
+                    useBuiltIns: "usage",
+                    corejs: "3.6.5"
+                  }
+                ]
+              ]
             }
           },
           "eslint-loader"

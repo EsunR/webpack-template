@@ -6,6 +6,7 @@
 - Sass
 - ESlint
 - Prettier
+- 兼容到IE8
 
 # 推荐教程
 
