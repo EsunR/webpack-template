@@ -1,15 +1,13 @@
-# Master基础分支
+# webpack-template
 
-在该基础分支下，已集成一下能力：
+模板已支持：
 
 - Babel
 - Sass
 - ESlint
 - Prettier
-- 兼容到IE8
-
-# 推荐教程
-
-- [WebPack 快速配置指南](./QuickStart.md)
-
-- [Webpack 4 和单页应用入门](https://github.com/wallstreetcn/webpack-and-spa-guide)
+- file-loader
+- html-loader
+- font-spider7
+- TypeScript
+- alias

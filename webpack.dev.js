@@ -6,6 +6,9 @@ module.exports = merge(common, {
   devtool: "inline-source-map",
   devServer: {
     contentBase: "./dist",
-    hot: true
+    // 设置 inline 这样当 html 发生改变后，页面也会呗刷新
+    inline: true,
+    hot: false,
+    host: "localhost"
   }
 })

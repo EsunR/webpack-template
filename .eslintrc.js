@@ -1,6 +1,6 @@
 module.exports = {
   extends: ["prettier"],
-  plugins: ["prettier"],
+  plugins: ["prettier", "html"],
   parserOptions: {
     sourceType: "module",
     ecmaVersion: 2015
@@ -51,4 +51,4 @@ module.exports = {
     // 必须使用双引号包裹字符串
     quotes: ["error", "double"]
   }
-};
+}
