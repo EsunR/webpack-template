@@ -1,6 +1,7 @@
 module.exports = {
-  extends: ["prettier"],
-  plugins: ["prettier", "html"],
+  parser: "@typescript-eslint/parser",
+  extends: ["prettier", "plugin:@typescript-eslint/recommended"],
+  plugins: ["prettier", "html", "@typescript-eslint"],
   parserOptions: {
     sourceType: "module",
     ecmaVersion: 2015
@@ -49,6 +50,7 @@ module.exports = {
     // 不允许使用分号
     semi: ["error", "never"],
     // 必须使用双引号包裹字符串
-    quotes: ["error", "double"]
+    quotes: ["error", "double"],
+    "@typescript-eslint/no-var-requires": "off",
   }
 }

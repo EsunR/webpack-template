@@ -5,7 +5,7 @@ const webpack = require("webpack")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin") // 防止样式闪烁
 
 module.exports = {
-  entry: "./src/js/index.js",
+  entry: "./src/js/index.ts",
   output: {
     filename: "bundle.[hash].js",
     path: path.resolve(__dirname, "dist")
@@ -25,7 +25,8 @@ module.exports = {
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src/")
-    }
+    },
+    extensions: [".tsx", ".ts", ".js"]
   },
   module: {
     rules: [
@@ -104,12 +105,7 @@ module.exports = {
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: "babel-loader"
-          },
-          "eslint-loader"
-        ]
+        use: ["babel-loader", "ts-loader", "eslint-loader"]
       }
     ]
   }
