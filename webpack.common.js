@@ -33,65 +33,65 @@ module.exports = {
       {
         test: /\.(html)$/,
         loader: "html-loader",
-        options: {
-          attributes: {
-            list: [
-              {
-                tag: "img",
-                attribute: "src",
-                type: "src"
-              },
-              {
-                tag: "img",
-                attribute: "pc-src",
-                type: "src"
-              },
-              {
-                tag: "img",
-                attribute: "mb-src",
-                type: "src"
-              },
-              {
-                tag: "link",
-                attribute: "href",
-                type: "src"
-              }
-            ]
-          }
-        }
+        // options: {
+        //   attributes: {
+        //     list: [
+        //       {
+        //         tag: "img",
+        //         attribute: "src",
+        //         type: "src"
+        //       },
+        //       {
+        //         tag: "img",
+        //         attribute: "pc-src",
+        //         type: "src"
+        //       },
+        //       {
+        //         tag: "img",
+        //         attribute: "mb-src",
+        //         type: "src"
+        //       },
+        //       {
+        //         tag: "link",
+        //         attribute: "href",
+        //         type: "src"
+        //       }
+        //     ]
+        //   }
+        // }
       },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[hash].[ext]",
-              outputPath: "images"
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "fonts"
-            }
-          }
-        ]
-      },
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
-      },
-      {
-        test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
-      },
+      // {
+      //   test: /\.(png|svg|jpg|gif)$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "[hash].[ext]",
+      //         outputPath: "images"
+      //       }
+      //     }
+      //   ]
+      // },
+      // {
+      //   test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "[name].[ext]",
+      //         outputPath: "fonts"
+      //       }
+      //     }
+      //   ]
+      // },
+      // {
+      //   test: /\.css$/,
+      //   use: [MiniCssExtractPlugin.loader, "css-loader"]
+      // },
+      // {
+      //   test: /\.scss$/,
+      //   use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+      // },
       {
         test: /\.js$/,
         exclude: /node_modules/,
